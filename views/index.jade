@@ -1,0 +1,17 @@
+link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous")
+form.row.g-3.needs-validation(action="/insert" method="post" validate='true')
+  .col-md-3
+    label.form-label(for='validationCustom01') Name
+    input#validationCustom01.form-control(type='text' name="name" required='')
+  .col-md-3
+    label.form-label(for='validationCustom02') Age
+    input#validationCustom02.form-control(type='number' name="age" required='')
+  .col-md-3
+    label.form-label(for='validationCustomUsername') favoriteFoods
+    .input-group.has-validation
+     
+      input#validationCustomUsername.form-control(type='text' name="food" aria-describedby='inputGroupPrepend' required='')
+  .col-12
+    button.btn.btn-primary(type='submit') ADD
+form.needs-validation(action='/data' method='get' validate='true')
+  button.btn.btn-primary(type='submit') Show Data
